@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        html, body{
-            background-color: rgb(80, 206, 63);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Odontológico Altafulla</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Saca tus citas de odontologia
+  <h1>Centro Odontológico Altafulla</h1>
+  <h2>Reserva tu cita en línea</h2>
+
+  <form id="citaForm">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="profesional">Profesional:</label>
+    <select id="profesional" name="profesional" required>
+      <option value="">Seleccione un profesional</option>
+      <option value="draGomez">Dra. Redondo</option>
+      <option value="drPerez">Dr. Pechiplayer</option>
+      <option value="draMartinez">Dra. Aragon</option>
+    </select>
+
+    <label for="fecha">Fecha de la cita:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="hora">Hora de la cita:</label>
+    <select id="hora" name="hora" required>
+      <option value="">Seleccione una hora</option>
+      <option value="09:00">09:00 am</option>
+      <option value="10:00">10:00 am</option>
+      <option value="11:00">11:00 am</option>
+      <option value="14:00">02:00 pm</option>
+      <option value="15:00">03:00 pm</option>
+    </select>
+
+    <button type="submit">Reservar Cita</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
